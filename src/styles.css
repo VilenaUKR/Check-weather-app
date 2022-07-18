@@ -121,6 +121,7 @@ input[type="button"] {
   margin-top: 7px;
   color: rgba(1, 5, 31, 0.87);
   border-radius: 2%;
+  font-size: larger;
   }
 
 input[type="text"] {
@@ -194,6 +195,10 @@ color: rgba(1, 5, 31, 0.87);
   opacity: 0.8;
   font-size: 22px;
   margin-bottom: 10px;
+}
+
+.img-forecast {
+  width: 90%;
 }
 
 footer,

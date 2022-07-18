@@ -123,7 +123,7 @@ function showForecastWeather(response) {
        )}°</div>
      </div>
      <span class="weather-forecast-image">
-     <img width="65"  src="${displayImage(
+     <img src="${displayImage(
        forecastDay.weather[0].icon
      )}" alt="" class="img-forecast" />
      </span>
