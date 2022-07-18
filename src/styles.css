@@ -177,15 +177,15 @@ color: rgba(1, 5, 31, 0.87);
   margin-top: 40px;
   padding: 8px;
   text-align: center;
-  font-size: 23px;
+  font-size: 24px;
   border-radius: 5%;
   width: 100%;
-  box-shadow: 1px 1px 0px 0px rgba(144, 221, 237, 0.3);
+   box-shadow: 1px 1px 0px 0px rgba(144, 221, 237, 0.3);
 
 }
 
 .weather-forecast-day {
-  font-size: 21px;
+  font-size: 22px;
   margin-bottom: 5px;
   font-weight: 600;
 }
@@ -193,14 +193,14 @@ color: rgba(1, 5, 31, 0.87);
 .weather-forecast-temperature-min {
   opacity: 0.8;
   font-size: 22px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 footer,
 #linkedin-link,
 #github-code-link,
 #netlify-link {
-  color: #03232e;
+  color: rgba(3, 11, 62, 0.87);
   text-shadow: 0.5px 0.3px 0.5px rgb(96, 159, 173);
   text-align: center;
   font-size: 16px;

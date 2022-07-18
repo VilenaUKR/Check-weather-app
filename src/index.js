@@ -122,9 +122,11 @@ function showForecastWeather(response) {
          forecastDay.temp.min
        )}°</div>
      </div>
-     <img src="${displayImage(
+     <span class="weather-forecast-image">
+     <img width="65"  src="${displayImage(
        forecastDay.weather[0].icon
      )}" alt="" class="img-forecast" />
+     </span>
     </div>
   </div>
           `;
