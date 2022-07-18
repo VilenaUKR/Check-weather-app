@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Weather app</title>
+    <meta charset="UTF-8" />
+    <video autoplay muted loop id="myVideo">
+      <source src="src/video.mp4" type="video/mp4">
+    </video>
+    <link rel="stylesheet" href="src/styles.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+
+  <body>
+    <div class="container-wrapper" style="max-width:850px">
+      <div class="container" style="max-width:850px">
+        <div class="row">
+          <div class="col-6">
+            <div class="row justify-content-center" id="main-card">
+              <div class="main-card">
+                <img src="icons/image01d.png" 
+                alt="sun"
+                class="img-weather-info"
+                id="image"></img>
+                <div class="main-emoji-description" id="main-emoji-description">Today is a great day
+                </div>
+                <div class="card-body">
+                  <span class="card-title" id="card-title">Kyiv</span>
+                  <span class="temperature" id="temperature">19</span>
+                  <span class="units">
+                    <a href="#" id="celsius-degrees-link" class="active">°C</a> |
+                    <a href="#" id="fahrenheit-degrees-link">°F</a>
+                  </span>
+                  <h5 class="card-text" id="currant-day"></h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-2"></div>
+          <div class="col-4">
+            <form id="show-city">
+              <span class="enter-city">
+                <input type="text" id="enter-city" placeholder="Type a city ..." autofocus="on" autocomplete="off" />
+                <input type="submit" value="🔍" id="search" />
+              </span>
+              <div class="currant-location">
+                <input type="button" value="Currant location" id="currant-location" />
+              </div>
+            </form>
+            <div class="weather-descriptions">
+              <div class="date" id="currant-date"></div>
+              <div class="humidity" id="humidity">Humidity: <span id="humidity-element"></span>%</div>
+              <div class="wind" id="wind">Wind: <span id="wind-speed"></span> km/h</div>
+            </div>
+          </div>
+        </div>
+        <div class="weather-forecast" id="weather-forecast"></div>
+
+        <footer> This project was coded by <a
+            href="https://www.linkedin.com/in/vilena-m-559307226?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B0Li46sySTWCRohbca%2Ft0RA%3D%3D"
+            id="linkedin-link" target="_blank">Vilena
+            Martirosova</a> and <a href="https://github.com/VilenaUKR/Weather-app" id="github-code-link"
+            target="_blank">is
+            open-sourced on
+            GitHub</a> and hosted on <a href="https://chekweather.netlify.app/" id="netlify-link"
+            target="_blank">Netlify</a> </footer>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+
+</html>

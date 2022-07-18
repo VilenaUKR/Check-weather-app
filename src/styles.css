@@ -1,0 +1,215 @@
+body {
+  background-image: url(video.mp4);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  align-items: center;
+}
+
+#myVideo {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.container-wrapper {
+  display: block;
+  margin: auto;
+  padding: 20px 20px 20px 20px;
+}
+
+.container {
+  background: linear-gradient(180deg, #6d95d6, #00ffff3d);
+  backdrop-filter: blur(0.5px);
+  border-color: none;
+  padding: 30px 20px 20px 20px;
+  border-radius: 2%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  margin-top: 60px;
+  color: rgba(3, 11, 62, 0.87);
+  font-family: "Times New Roman", Times, serif;
+}
+
+.col-8 {
+  text-align: center;
+}
+
+.row #main-card {
+  line-height: 60px;
+  box-shadow: none;
+  border: none;
+  text-align: center;
+  margin-top: -10px;
+}
+
+.main-card [id="icon"] {
+  width: 170px;
+  margin-bottom: -10px;
+}
+
+#main-emoji-description {
+  font-style: italic;
+  margin-bottom: -35px;
+  font-size: 20px;
+  text-shadow: none;
+}
+
+#main-emoji-description::first-letter,
+#card-title::first-letter {
+  text-transform: capitalize;
+}
+
+#card-title {
+  margin-left: 20px;
+  font-size: 45px;
+  font-weight: bold;
+  text-shadow: 1px 2px 2px rgba(144, 221, 237, 0.3);
+}
+
+.temperature {
+  font-size: 43px;
+  margin-left: 10px;
+   font-weight: bold;
+   text-shadow: 1px 2px 2px rgba(144, 221, 237, 0.3);
+  }
+
+.units {
+  position: relative;
+  font-size: 17px;
+  top: -18px;
+  text-shadow: none;
+}
+
+.units .active {
+  color: #000;
+  cursor: default;
+}
+
+.units .active:hover {
+  text-decoration: none;
+}
+
+.card-text {
+  font-size: 25px;
+  }
+
+#show-city {
+  width: 115%;
+  float: right;
+}
+
+.enter-city {
+  display: flex;
+}
+
+input[type="text"],
+input[type="submit"],
+input[type="button"] {
+  background: rgba(245, 242, 242, 0);
+  border-color: rgba(144, 221, 237, 0.3);
+  padding: 4px 10px;
+  box-shadow: 5px 0 5px rgba(144, 221, 237, 0.3);
+  margin-top: 7px;
+  color: rgba(1, 5, 31, 0.87);
+  border-radius: 2%;
+  }
+
+input[type="text"] {
+  width: 100%;
+border-color: rgba(144, 221, 237, 0.3);
+}
+
+input[type="button"] {
+  width: 100%;
+  letter-spacing: 1px;
+}
+
+::placeholder {
+color: rgba(1, 5, 31, 0.87);
+  }
+
+.weather-descriptions {
+  margin-top: 35px;
+  background: rgba(245, 242, 242, 0);
+  border: none;
+  line-height: 40px;
+  width: 115%;
+  float: right;
+}
+
+#currant-date {
+  font-size: 30px;
+  padding: 0;
+}
+
+#humidity,
+#wind {
+  padding: 0;
+  font-size: 20px;
+  letter-spacing: 1px;
+  text-shadow: none;
+}
+
+#humidity-element,
+#wind-speed {
+  margin-left: 3px;
+  margin-right: 4px;
+}
+
+.card {
+  height: 80%;
+  margin-bottom: 15px;
+  }
+
+.row .card {
+  background: transparent;
+  border-color: none;
+  border-width: 0px;
+  margin-top: 40px;
+  padding: 8px;
+  text-align: center;
+  font-size: 23px;
+  border-radius: 5%;
+  width: 100%;
+  box-shadow: 1px 1px 0px 0px rgba(144, 221, 237, 0.3);
+
+}
+
+.weather-forecast-day {
+  font-size: 21px;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.weather-forecast-temperature-min {
+  opacity: 0.8;
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+footer,
+#linkedin-link,
+#github-code-link,
+#netlify-link {
+  color: #03232e;
+  text-shadow: 0.5px 0.3px 0.5px rgb(96, 159, 173);
+  text-align: center;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+#linkedin-link,
+#github-code-link,
+#netlify-link {
+  text-decoration-line: underline;
+  font-weight: 600;
+}
