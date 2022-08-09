@@ -68,13 +68,13 @@ function displayImage(icon) {
   } else if (icon === `10d`) {
     iconPath = "icons/image10d.png";
   } else if (icon === `11d`) {
-    iconPath = "icons/media/image11d.png";
+    iconPath = "icons/image11d.png";
   } else if (icon === `13d`) {
-    iconPath = "icons/media/image13d.png";
+    iconPath = "icons/image13d.png";
   } else if (icon === `50d`) {
-    iconPath = "icons/media/image50d.png";
+    iconPath = "icons/image50d.png";
   } else if (icon === `01n`) {
-    iconPath = "icons/media/image01n.png";
+    iconPath = "icons/image01n.png";
   } else if (icon === `02`) {
     iconPath = "icons/image02n.png";
   } else if (icon === `03n`) {
@@ -151,7 +151,7 @@ function showCurrentTemperature(response) {
   let humidityElement = document.querySelector("#humidity-element");
   let windSpeedElement = document.querySelector("#wind-speed");
   let image = document.querySelector("#image");
-  let icon = response.data.weather["0"].icon;
+  let icon = response.data.weather[0].icon;
   //
   celsiusTemperature = response.data.main.temp;
   cityElement.innerHTML = response.data.name;
