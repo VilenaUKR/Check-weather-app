@@ -162,7 +162,7 @@ function showCurrentTemperature(response) {
   humidityElement.innerHTML = response.data.main.humidity;
   windSpeedElement.innerHTML = Math.round(response.data.wind.speed);
   image.setAttribute("src", displayImage(icon));
-  
+
   getForecastWeather(response.data.coord);
 }
 
